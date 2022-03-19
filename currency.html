@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/currency.css">
+
+    <title>Sample Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!--
+
+TemplateMo 570 Chain App Dev
+
+https://templatemo.com/tm-570-chain-app-dev
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <div style="font-size: 30px;font-weight: bolder;">CALCON</div>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li> 
+              <li><div class="gradient-button"><a href="index.html#services"> Services</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div>
+      <!--***************Currency Convert Body Starts*******************-->
+     <br>
+	 <br>
+	 <br>
+
+	  <div class="container">
+		<div class="currency">
+			<select id="from_currency">
+				<option value="AED">AED</option>
+				<option value="ARS">ARS</option>
+				<option value="AUD">AUD</option>
+				<option value="BGN">BGN</option>
+				<option value="BRL">BRL</option>
+				<option value="BSD">BSD</option>
+				<option value="CAD">CAD</option>
+				<option value="CHF">CHF</option>
+				<option value="CLP">CLP</option>
+				<option value="CNY">CNY</option>
+				<option value="COP">COP</option>
+				<option value="CZK">CZK</option>
+				<option value="DKK">DKK</option>
+				<option value="DOP">DOP</option>
+				<option value="EGP">EGP</option>
+				<option value="EUR">EUR</option>
+				<option value="FJD">FJD</option>
+				<option value="GBP">GBP</option>
+				<option value="GTQ">GTQ</option>
+				<option value="HKD">HKD</option>
+				<option value="HRK">HRK</option>
+				<option value="HUF">HUF</option>
+				<option value="IDR">IDR</option>
+				<option value="ILS">ILS</option>
+				<option value="INR">INR</option>
+				<option value="ISK">ISK</option>
+				<option value="JPY">JPY</option>
+				<option value="KRW">KRW</option>
+				<option value="KZT">KZT</option>
+				<option value="MXN">MXN</option>
+				<option value="MYR">MYR</option>
+				<option value="NOK">NOK</option>
+				<option value="NZD">NZD</option>
+				<option value="PAB">PAB</option>
+				<option value="PEN">PEN</option>
+				<option value="PHP">PHP</option>
+				<option value="PKR">PKR</option>
+				<option value="PLN">PLN</option>
+				<option value="PYG">PYG</option>
+				<option value="RON">RON</option>
+				<option value="RUB">RUB</option>
+				<option value="SAR">SAR</option>
+				<option value="SEK">SEK</option>
+				<option value="SGD">SGD</option>
+				<option value="THB">THB</option>
+				<option value="TRY">TRY</option>
+				<option value="TWD">TWD</option>
+				<option value="UAH">UAH</option>
+				<option value="USD" selected>USD</option>
+				<option value="UYU">UYU</option>
+				<option value="VND">VND</option>
+				<option value="ZAR">ZAR</option>
+			</select>
+			<input type="number" id="from_ammount" placeholder="0" value=1 />
+		</div>
+		<div class="middle">
+			<button id="exchange">
+				↔️
+			</button>
+			<div class="rate" id="rate"></div>
+		</div>
+		<div class="currency">
+			<select id="to_currency"><option value="AED">AED</option>
+				<option value="ARS">ARS</option>
+				<option value="AUD">AUD</option>
+				<option value="BGN">BGN</option>
+				<option value="BRL">BRL</option>
+				<option value="BSD">BSD</option>
+				<option value="CAD">CAD</option>
+				<option value="CHF">CHF</option>
+				<option value="CLP">CLP</option>
+				<option value="CNY">CNY</option>
+				<option value="COP">COP</option>
+				<option value="CZK">CZK</option>
+				<option value="DKK">DKK</option>
+				<option value="DOP">DOP</option>
+				<option value="EGP">EGP</option>
+				<option value="EUR">EUR</option>
+				<option value="FJD">FJD</option>
+				<option value="GBP">GBP</option>
+				<option value="GTQ">GTQ</option>
+				<option value="HKD">HKD</option>
+				<option value="HRK">HRK</option>
+				<option value="HUF">HUF</option>
+				<option value="IDR">IDR</option>
+				<option value="ILS">ILS</option>
+				<option value="INR" selected>INR</option>
+				<option value="ISK">ISK</option>
+				<option value="JPY">JPY</option>
+				<option value="KRW">KRW</option>
+				<option value="KZT">KZT</option>
+				<option value="MXN">MXN</option>
+				<option value="MYR">MYR</option>
+				<option value="NOK">NOK</option>
+				<option value="NZD">NZD</option>
+				<option value="PAB">PAB</option>
+				<option value="PEN">PEN</option>
+				<option value="PHP">PHP</option>
+				<option value="PKR">PKR</option>
+				<option value="PLN">PLN</option>
+				<option value="PYG">PYG</option>
+				<option value="RON">RON</option>
+				<option value="RUB">RUB</option>
+				<option value="SAR">SAR</option>
+				<option value="SEK">SEK</option>
+				<option value="SGD">SGD</option>
+				<option value="THB">THB</option>
+				<option value="TRY">TRY</option>
+				<option value="TWD">TWD</option>
+				<option value="UAH">UAH</option>
+				<option value="USD">USD</option>
+				<option value="UYU">UYU</option>
+				<option value="VND">VND</option>
+				<option value="ZAR">ZAR</option>
+			</select>
+			<input type="number" id="to_ammount" placeholder="0" />
+		</div>
+	</div>
+	  <script  src="assets/js/currenncy.js"></script>
+	  
+      <!--***************Currency Convert Body ends*******************-->
+  
+  </header>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
